@@ -15,7 +15,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-def load_font(path):
+def loadFont(path):
     p = ttf.TruetypeInfo(resource_path(path))
     name = p.get_name("name")
     p.close()
@@ -23,9 +23,9 @@ def load_font(path):
     return name
 
 
-eras = load_font("ERASBD.TTF")
-century = load_font("CENTURY.TTF")
-coprgtb = load_font("COPRGTB.TTF")
-coprgtl = load_font("COPRGTL.TTF")
+eras = loadFont("ERASBD.TTF")
+century = loadFont("CENTURY.TTF")
+coprgtb = loadFont("COPRGTB.TTF")
+coprgtl = loadFont("COPRGTL.TTF")
 
 icon = resource_path("Clock.png")

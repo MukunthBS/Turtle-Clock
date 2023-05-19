@@ -17,7 +17,7 @@ def drawFace():
     faceP.goto(0, 100)
     faceP.setheading(180)
     faceP.down()
-    faceP.fillcolor(88, 124, 119)
+    faceP.fillcolor("#587c77")
     faceP.begin_fill()
     faceP.circle(100)
     faceP.end_fill()
@@ -52,7 +52,7 @@ def drawFace():
 def drawStrap():
     strapP = makePen()
     strapP.color("black")
-    strapP.fillcolor(35, 36, 31)
+    strapP.fillcolor("#23241f")
 
     strapP.begin_fill()
     strapP.goto(-60, 0)
@@ -68,7 +68,7 @@ def drawStrap():
     strapP.forward(500)
     strapP.end_fill()
 
-    strapP.fillcolor(255, 246, 210)
+    strapP.fillcolor("#fff6d2")
 
     strapP.up()
     strapP.goto(0, -180)
@@ -101,7 +101,7 @@ def drawHands(hour, minute, sec, handP):
     handP.setheading(90)
     handP.right(hour / 12 * 360)
     handP.width(3)
-    handP.color(0, 0, 0)
+    handP.color("black")
     handP.down()
     handP.forward(40)
 
@@ -110,7 +110,7 @@ def drawHands(hour, minute, sec, handP):
     handP.setheading(90)
     handP.right(minute / 60 * 360)
     handP.width(2)
-    handP.color(15, 15, 15)
+    handP.color("#0f0f0f")
     handP.down()
     handP.forward(60)
 
@@ -119,7 +119,7 @@ def drawHands(hour, minute, sec, handP):
     handP.setheading(90)
     handP.right(sec / 60 * 360)
     handP.width(1)
-    handP.color(30, 30, 30)
+    handP.color("#1e1e1e")
     handP.down()
     handP.forward(80)
 

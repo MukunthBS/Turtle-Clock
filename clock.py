@@ -7,8 +7,7 @@ from utils import *
 try:
     wn = Screen()
     wn.tracer(0)
-    wn.colormode(255)
-    wn.bgcolor(255, 246, 210)
+    wn.bgcolor("#fff6d2")
     wn.setup(width=600, height=600)
     wn.title("Clock")
     wn._root.resizable(False, False)
@@ -24,7 +23,7 @@ try:
 
     textP = makePen()
     textP.up()
-    textP.color(35, 36, 31)
+    textP.color("#23241f")
 
     while True:
         hour, minute, sec, ap = getSystemTime()
