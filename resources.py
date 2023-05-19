@@ -19,7 +19,7 @@ def load_font(path):
     p = ttf.TruetypeInfo(resource_path(path))
     name = p.get_name("name")
     p.close()
-    add_file(path)
+    add_file(resource_path(path))
     return name
 
 
