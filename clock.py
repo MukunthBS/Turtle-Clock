@@ -1,5 +1,5 @@
 from turtle import Screen
-from tkinter import TclError
+from tkinter import Image, TclError
 from draw_utils import *
 from resources import *
 from utils import *
@@ -12,12 +12,16 @@ try:
     wn.setup(width=600, height=600)
     wn.title("Clock")
     wn._root.resizable(False, False)
-    wn._root.iconphoto(True, icon)
+
+    img = Image("photo", file=icon)
+    wn._root.iconphoto(True, img)
 
     drawStrap()
+
     drawFace()
 
     handP = makePen()
+
     textP = makePen()
     textP.up()
     textP.color(35, 36, 31)

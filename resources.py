@@ -2,7 +2,6 @@ import os
 import sys
 from pyglet import options
 from pyglet.font import add_file, ttf
-from tkinter import Image
 
 options["win32_gdi_font"] = True
 
@@ -29,4 +28,4 @@ century = load_font("CENTURY.TTF")
 coprgtb = load_font("COPRGTB.TTF")
 coprgtl = load_font("COPRGTL.TTF")
 
-icon = Image("photo", file=resource_path("Clock.png"))
+icon = resource_path("Clock.png")
