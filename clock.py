@@ -7,7 +7,6 @@ import time
 import requests
 from draw_utils import *
 from resources import *
-from interface import *
 from idlelib.tooltip import Hovertip
 
 
