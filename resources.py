@@ -29,3 +29,5 @@ coprgtb = loadFont("COPRGTB.TTF")
 coprgtl = loadFont("COPRGTL.TTF")
 
 icon = resource_path("Clock.png")
+world = resource_path("world.png")
+monitor = resource_path("monitor.png")
